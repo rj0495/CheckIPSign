@@ -19,8 +19,8 @@ class CheckIPSign extends PluginBase implements Listener{
 	$player = $event->getPlayer();
 		if(strtolower(trim($event->getLine(0))) == "checkip" || strtolower(trim($event->getLine(0))) == "[IP]"){
 			if($player->hasPermission("checkip.commands.sign")){
-			        $ip = $player->getAddress();      
-                    $name = $player->getDisplayName();  
+			          $ip = $player->getAddress();      
+                                  $name = $player->getDisplayName();  
 				$event->setLine(0,"[CheckIP]");
 				$event->setLine(1,""$name"Your ip is");
 				$event->setLine(2,"[ "$ip" ]");
